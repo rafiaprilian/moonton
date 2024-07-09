@@ -1,12 +1,14 @@
 import TextInput from "@/Components/TextInput";
 import InputLabel from "@/Components/InputLabel";
 import PrimaryButton from "@/Components/PrimaryButton";
-import { Link } from "@inertiajs/inertia-react";
+import { Link, Head } from "@inertiajs/react";
 import React from "react";
 
 export default function Login(){
     return (
-        
+        <>
+            <Head title="Sign In" />
+
             <div className="mx-auto max-w-screen min-h-screen bg-black text-white md:px-10 px-3">
                 <div className="fixed top-[-50px] hidden lg:block">
                     <img src="/images/signup-image.png"
@@ -70,6 +72,6 @@ export default function Login(){
                     </div>
                 </div>
             </div>
-        
+        </>
     );
 }
